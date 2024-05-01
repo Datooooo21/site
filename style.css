@@ -1,0 +1,256 @@
+/* საერთო სტილები */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+main p{
+    font-size: 1.2rem;
+}
+p{
+
+    padding: 22px 10px 25px 10px;
+}
+.row,
+.my-navigation ul,
+.my-navigation ul li,
+footer,
+.cont,
+.cont-two div,
+.cont-three,
+.col,
+.footer-navigation
+{
+    display: flex;
+}
+.logo,
+article,
+.cont,
+footer,
+.footer-navigation,
+.cont-two{
+    justify-content: center;
+}
+.row,
+.logo,
+.my-navigation ul li,
+.cont-two,
+.cont-two div,
+.cont-three,
+.col,
+.footer-navigation
+{
+    align-items: center;
+}
+/* header */
+.row{
+    height: 90px;
+    background-color: #013139;
+    justify-content: space-around;
+}
+.logo span{
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+.my-navigation i{
+    display: none;
+    font-size: 1.8rem;
+    color: red;
+}
+.my-navigation ul{
+    width: 40vw;
+    justify-content: space-around;
+}
+.my-navigation a{
+    transition: .4s;
+    color: goldenrod;
+    position: absolute;
+}
+.my-navigation a:hover{
+    font-size: 1.1rem;
+    color: red;
+}
+/* and of header */
+
+/* main */
+main{
+    min-height: 70vh;
+}
+article{
+    display: grid;
+    text-align: center;
+}
+h1{
+    padding: 20px;
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+.cont div{
+    height: 450px;    
+}
+.cont div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapper{
+    display: block;
+}
+
+.cont-two div{
+    width: 100%;
+    height: 100px;
+    gap: 30px;
+}
+.cont-two span{
+    font-size: clamp( 1rem, 1.4rem, 1.8rem) 
+}
+.cont-two div i{
+    font-size: clamp(1.6rem, 2.6rem, 3.6rem);
+}
+.fa-phone-volume{
+    color: rgb(88, 161, 14);
+}
+.fa-envelope{
+    color: #0da2b9;
+}
+.cont-three{
+    min-height: 72vh;
+    padding-bottom: 20px;
+}
+.worckers img{
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper{
+    justify-content: left;
+    background-color: #013139;
+    padding: 15px;
+}
+.col{
+    width: 100%;
+    gap: 25px;
+    height: 100px;
+}
+.col span{
+    font-size: 1.2rem;
+    color:  rgb(88, 161, 14);
+}
+.col img{
+    width: 50px;
+}
+/* footer */
+footer{
+    background-color: #013139;
+}
+.footer-navigation{
+    padding-top: 15px;
+    gap: 55px;
+}
+.footer-navigation a{
+    color: goldenrod;
+    transition: .3s;
+}
+.footer-navigation a:hover{
+    color: rgb(208, 17, 58);
+}
+footer p{
+    color: goldenrod;
+}
+
+/* რესპონსივები */
+
+@media screen and (min-width: 992px) {
+    .cont div > img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px !important;
+    }
+    .car1{
+        transform: translateX(5%);
+    }
+    .car2{
+        transform: translate(-5%, 10%);
+    }
+    /* and of main */
+    footer{
+        transform: translateY(50%);
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo span, h1{
+        font-size: 1.8rem;
+    }
+    h1, p{
+        padding: 10px;
+    }
+    .cont{
+        align-items: center;
+        gap: 15px;
+    }
+    .cont div{
+        width: 48vw;
+        height: 300px;
+    }
+    .cont-three{
+        flex-direction: column;
+        align-items: center;
+    }
+    .worckers{
+        width: 90vw;
+    }
+    .cont-three > div{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 778px) {
+    .logo span{
+        font-size: 1.8rem;
+    }
+    .row{
+        position: relative;
+    }
+    .my-navigation ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0;
+    }
+    .my-navigation ul li{
+        width: 100%;
+        height: 45px;
+        line-height: 25px;
+        display: grid;
+        place-items: center;
+        border: 1px  solid red;
+    }
+    .my-navigation ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    .active{
+        display: flex !important;
+    }
+    .drop{
+        display: block !important;
+        background-color: #115863;
+    }
+    .cont{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .cont div{
+        width: 90vw;
+        height: 350px;
+    }
+    
+}

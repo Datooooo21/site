@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავეჯის გადაზიდვა</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="logo">
+                <span>ავეჯის გადაზიდვა</span>
+            </div>
+            <nav class="my-navigation">
+                <i class="fa-solid fa-bars none active"></i>
+                <i class="fa-solid fa-x none"></i>
+                <ul class=" ">
+                    <li><a href="index.html" class="text2">მთავარი</a></li>
+                    <li><a href="contact.html" class="text2">კონტაქტი</a></li>
+                    <li><a href="shesaxeb.html" class="text2">ჩვენ შესახებ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="cont-three">
+                <div class="worckers">
+                    <img src="images/DIVERS~1 (1).PNG" alt="car1">
+                </div>
+                <div class="wrapper">
+                    <h1>ავეჯის გადაზიდვა</h1>
+                    <div class="col">
+                        <img src="images/5290109.png" alt="check">
+                        <span>გთავაზობთ ავეჯის გადაზიდვის სერვისს</span>
+                    </div>
+                    <div class="col">
+                        <img src="images/5290109.png" alt="check">
+                        <span>ჩვენ პასუხისმგებელი ვართ უსაფრთხო ტრანსპორტირებაზე</span>
+                    </div>
+                    <div class="col">
+                        <img src="images/5290109.png" alt="check">
+                        <span>ნებისმიერი წონისა და მოცულობის ავეჯს გადავიტანთ სასურველ მისამართზე</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <article>
+            <ul class="footer-navigation">
+                <li><a href="index.html" class="text2">მთავარი</a></li>
+                <li><a href="contact.html" class="text2">კონტაქტი</a></li>
+                <li><a href="shesaxeb.html" class="text2">ჩვენ შესახებ</a></li>
+            </ul>
+            <p>© 2024, ავეჯის გადაზიდვა. ყველა უფლება დაცულია</p>
+        </article>
+    </footer>
+</body>
+<script>
+    let drop = document.querySelector('.my-navigation ul')
+    let bar = document.querySelector('.fa-bars')
+    let xmark = document.querySelector('.fa-x')
+    console.log(drop)
+    bar.addEventListener('click', function(){
+        bar.classList.remove('active')
+        xmark.classList.add('active')
+        drop.classList.add('drop')
+    })
+    xmark.addEventListener('click', function(){
+        bar.classList.add('active')
+        xmark.classList.remove('active')
+        drop.classList.remove('drop')
+    })
+</script>
+</html>
